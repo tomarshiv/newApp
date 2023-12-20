@@ -13,6 +13,7 @@ const RbSheet = ({ backgroundColor,onPress ,title}) => {
                 alignItems: "center",
                 backgroundColor: "#fff",
                 margin: 14,
+                
             }}>
             <Button title='title'  onPress={() => refRBSheet.current.open()} />
 
