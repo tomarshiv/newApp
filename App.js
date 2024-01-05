@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, View } from 'react-native'
-import Button from "./src/Component/Button";
-import Button2 from "./src/Component/Button2";
-import RbSheet from "./src/Component/RbSheet";
-import DetailForm from "./src/Component/DetailForm";
+import Screen1 from "./src/Component/screen/Screen1";
+import List from "./src/Component/List";
+import SectionList1 from "./src/Component/SectionList1";
+import Array from "./src/Component/Array";
+import store from "./src/redux/Store";
+
+// React.useEffect(()=>{
+//   store.dispatch({type:'ADD_USER_NAME',payload:'Sivani'})
+// },[])
+
+
 
 const App = () => {
-  const someFun = () =>{
+ return (
+    <Screen1 />
 
-  }
-return (
-    <View>
-      <Button textmargin={7} textpos={'center'} backgroundColor="yellowgreen" title="Green Button"   />
-      {/* <Button textmargin={7} textpos={'center'} backgroundColor="red" title="Red Button"  /> */}
-
-      <RbSheet onPress={someFun} />
-   </View>
+    // <Array/>
+ 
   )
 }
-export default App
+export default App;

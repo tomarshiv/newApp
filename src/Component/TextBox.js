@@ -1,16 +1,32 @@
 import React from "react";
-import {View,Text, TextInput} from 'react-native'
-const TextBox=({backgroundColor:backgroundColor})=>{
+import {View,Text,StyleSheet} from 'react-native'
+import commonStyles from '../styles/Style'
+const TextBox=()=>{
     return(
-        <View style={{backgroundColor:backgroundColor, width:'90%',margin:14, borderColor:'gray',borderWidth:0.6}}>
-          <TextInput placeholder="Enter name"/>
+        <View>
+        <Text>hh</Text>
+    <Text style={commonStyles.text}>shivani tomar</Text>
+      <Text style={commonStyles.text}>shivani tomar</Text> 
+        <Text style={[commonStyles.text,styles.box,{borderColor:'red',borderWidth:1}]}>shivani tomar</Text>
         </View>
     )
 }
 
+const styles=StyleSheet.create= ({
+  box:{
+    textAlign:'center',
+    backgroundColor:'skyblue',
+    marginBottom:10,
+    padding:3,
+    margin:9,
+    height:50,
+   
+  }
+})
 
-TextBox.defaultProps={
-  backgroundColor:'#fff'
 
-}
+
+
+
+
 export default TextBox;

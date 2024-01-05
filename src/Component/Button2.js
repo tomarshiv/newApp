@@ -1,11 +1,12 @@
 import React from "react";
-import{View,Text} from 'react-native'
+import{View,Text,Button} from 'react-native'
 
 const Button2=(props)=>{
     console.log(props.name)
     return(
         <View>
             <Text>{props.name}</Text>
+            <Button title="submit" />
         </View>
     )
 }
